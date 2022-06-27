@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cardo&family=Poppins&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/47c22e8f6a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+     
+      <h1>WEATHER</h1>
+
+      <h2>SUNDAY, 13:30</h2>
+      
+      <form class="search-form" id="search-form">
+        <label for="search" class="form-label">City</label>
+        <input 
+        type="text" 
+        id="search-text-input" 
+        placeholder="Enter your city" 
+        autocomplete="off">
+        <input type="submit" class="btn btn-primary" value="Search" />
+        <button type="button" class="btn btn-secondary btn-sm" id="current-button">Current</button>
+      </form>
+      <div class="border border-secondary p-2 mb-2 border-opacity-50">
+        <h3 id="city">PARIS</h3>
+        <div class="row row-cols-4">
+          <div class="col-4">
+            <span id="degree">22</span> 
+            <span class="degree-units">
+              <a href="#" id="celsius">°C </a>
+              <a href="#" id="fahrenheit"></a> 
+            </span>
+          </div>
+          <div class="col-4">
+            <a href="https://fontawesome.com/" target="_blank"></a>
+            <span id="sun"><i class="fa-solid fa-sun"></i></span>
+          </div>
+          <div class="col-4"><span id="comment">Sunny</span></div>
+        </div>
+      </div>
+      <h3>5 Day Weather Forecast</h3>
+            
+      <div class="card-group">
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">Monday</h5>
+                <a href="https://fontawesome.com/" target="_blank"></a>
+                <p class="card-text">
+                  Cloudy <i class="fa-solid fa-cloud"></i>
+                </p>
+                <p class="card-text"><span id="degree-2">20°</span></p>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">Tuesday</h5>
+                <a href="https://fontawesome.com/" target="_blank"></a>
+                <p class="card-text">
+                  Partly cloudy <i class="fa-solid fa-cloud-sun"></i>
+                </p>
+                <p class="card-text"><span id="degree-2">21°</span></p>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">Wednesday</h5>
+                <a href="https://fontawesome.com/" target="_blank"></a>
+                <p class="card-text">
+                  Sunny <i class="fa-solid fa-sun"></i>
+                </p>
+                <p class="card-text"><span id="degree-2">20°</span></p>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">Thursday</h5>
+                <a href="https://fontawesome.com/" target="_blank"></a>
+                <p class="card-text">
+                  Rainy <i class="fa-solid fa-cloud-rain"></i>
+                </p>
+                <p class="card-text"><span id="degree-2">19°</span></p>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">Friday</h5>
+                <a href="https://fontawesome.com/" target="_blank"></a>
+                <p class="card-text">
+                  Sunny <i class="fa-solid fa-sun"></i>
+                </p>
+                <p class="card-text"><span id="degree-2">22°</span></p>
+            </div>
+        </div>
+      </div>
+    
+    <script src="src/index.js"></script>
+  </body>
+</html>

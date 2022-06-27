@@ -1,0 +1,66 @@
+body {
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: left;
+  font-weight: 900;
+  margin: 0;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h1 h2,
+h3 {
+  color: #231d3c;
+}
+
+form {
+  position: fixed;
+  top: 61px;
+  right: 160px;
+}
+
+.btn {
+  top: 60px;
+  background-color: #fff;
+  color: #231d3c;
+  margin: 5px auto;
+  padding: 5px 10px;
+  border: #231d3c;
+  font-size: 16px;
+}
+button {
+  position: fixed;
+  top: 61px;
+  right: 83px;
+}
+
+#degree {
+  font-size: 60px;
+}
+
+#celsius,
+#fahrenheit {
+  font-size: 60px;
+  font-weight: 100;
+  color: #231d3c;
+}
+
+#sun {
+  text-align: center;
+  display: block;
+  margin: 0;
+  font-size: 90px;
+}
+
+#comment {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+#degree-2 {
+  font-size: 44px;
+}
