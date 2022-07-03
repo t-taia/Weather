@@ -24,100 +24,118 @@
   </head>
   <body>
     <div class="container">
-     
-      <h1>WEATHER</h1>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="mb-3" id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter your city"
+                  class="form-control"
+                  id="search-text-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-light w-100"
+                />
+              </div>
+            </div>
+          </form>
 
-      <h2>SUNDAY, 13:30</h2>
-      
-      <form class="search-form" id="search-form">
-        <label for="search" class="form-label">City</label>
-        <input 
-        type="text" 
-        id="search-text-input" 
-        placeholder="Enter your city" 
-        autocomplete="off">
-        <input type="submit" class="btn btn-primary" value="Search" />
-        <button type="button" class="btn btn-secondary btn-sm" id="current-button">Current</button>
-      </form>
-      <div class="border border-secondary p-2 mb-2 border-opacity-50">
-        <h3 id="city">PARIS</h3>
-        <div class="row row-cols-4">
-          <div class="col-4">
-            <span id="degree">22</span> 
-            <span class="degree-units">
-              <a href="#" id="celsius">°C |</a>
-              <a href="#" id="fahrenheit">°F</a> 
-            </span>
+          <div class="overview">
+            <h2>SUNDAY, 13:30</h2>
+            <h3 id="city">PARIS</h3>
+            <p id="comment">Sunny</p>
           </div>
-          <div class="col-4">
-            <a href="https://fontawesome.com/" target="_blank"></a>
-            <span id="sun"><i class="fa-solid fa-sun"></i></span>
+
+          <div class="row row-cols-4">
+            <div class="col-4">
+              <span id="degree">22</span>
+              <span class="degree-units">
+                <a href="#" id="celsius">°C |</a>
+                <a href="#" id="fahrenheit">°F</a>
+              </span>
+            </div>
+            <div class="col-4">
+              <a href="https://fontawesome.com/" target="_blank"></a>
+              <span id="icon"><i class="fa-solid fa-sun"></i></span>
+            </div>
+            <div class="col-4">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-4"><span id="comment">Sunny</span></div>
-        </div>
-      </div>
-      <h3>5 Day Weather Forecast</h3>
-            
-      <div class="card-group">
-        <div class="card" >
-            <div class="card-body">
+
+          <h4>5 Day Weather Forecast</h4>
+
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
                 <h5 class="card-title">Monday</h5>
                 <a href="https://fontawesome.com/" target="_blank"></a>
                 <p class="card-text">
-                  Cloudy <i class="fa-solid fa-cloud"></i>
+                  <i class="fa-solid fa-cloud"></i>
                 </p>
                 <p class="card-text"><span id="degree-2">20°</span></p>
+              </div>
             </div>
-        </div>
-        <div class="card" >
-            <div class="card-body">
+            <div class="card">
+              <div class="card-body">
                 <h5 class="card-title">Tuesday</h5>
                 <a href="https://fontawesome.com/" target="_blank"></a>
                 <p class="card-text">
-                  Partly cloudy <i class="fa-solid fa-cloud-sun"></i>
+                  <i class="fa-solid fa-cloud-sun"></i>
                 </p>
                 <p class="card-text"><span id="degree-2">21°</span></p>
+              </div>
             </div>
-        </div>
-        <div class="card" >
-            <div class="card-body">
+            <div class="card">
+              <div class="card-body">
                 <h5 class="card-title">Wednesday</h5>
                 <a href="https://fontawesome.com/" target="_blank"></a>
                 <p class="card-text">
-                  Sunny <i class="fa-solid fa-sun"></i>
+                  <i class="fa-solid fa-sun"></i>
                 </p>
                 <p class="card-text"><span id="degree-2">20°</span></p>
+              </div>
             </div>
-        </div>
-        <div class="card" >
-            <div class="card-body">
+            <div class="card">
+              <div class="card-body">
                 <h5 class="card-title">Thursday</h5>
                 <a href="https://fontawesome.com/" target="_blank"></a>
                 <p class="card-text">
-                  Rainy <i class="fa-solid fa-cloud-rain"></i>
+                  <i class="fa-solid fa-cloud-rain"></i>
                 </p>
                 <p class="card-text"><span id="degree-2">19°</span></p>
+              </div>
             </div>
-        </div>
-        <div class="card" >
-            <div class="card-body">
+            <div class="card">
+              <div class="card-body">
                 <h5 class="card-title">Friday</h5>
                 <a href="https://fontawesome.com/" target="_blank"></a>
                 <p class="card-text">
-                  Sunny <i class="fa-solid fa-sun"></i>
+                  <i class="fa-solid fa-sun"></i>
                 </p>
                 <p class="card-text"><span id="degree-2">22°</span></p>
+              </div>
             </div>
+          </div>
         </div>
+        <small>
+          <a href="https://github.com/t-taia/Weather/" target="_blank">
+            GitHub
+          </a></small
+        >
       </div>
+    </div>
 
-      <p class="footer">
-        <small> Open-source code by </small>
-        <a href="https://github.com/t-taia/Weather/" target="_blank">
-          <small> Taisia Tarasova </small>
-        </a>
-      </p>
-    
     <script src="index.js"></script>
   </body>
 </html>
