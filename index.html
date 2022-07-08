@@ -71,12 +71,15 @@
 
           <div class="row row-cols-4">
             <div class="col-4">
-              <span id="temperature"><strong>22</strong></span>
-              <span class="degree-units">
-                <a href="" id="celsius" class="active">°C |</a>
-                <a href="" id="fahrenheit"> °F</a>
-              </span>
+              <div class="clearfix weather-temperature">
+                <span id="temperature"><strong>22</strong></span>
+                <span class="degree-units">
+                  <a href="" id="celsius" class="active">°C </a>
+                  <a href="" id="fahrenheit"></a>
+                </span>
+              </div>
             </div>
+
             <div class="col-4">
               <img src="rain.png" alt="rain" id="icon" />
             </div>
@@ -90,69 +93,16 @@
             </div>
           </div>
 
-          <h4>5 Day Weather Forecast</h4>
+          <h4>Weather Forecast</h4>
 
-          <div class="card-group">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Monday</h5>
-                <a href="https://fontawesome.com/" target="_blank"></a>
-                <p class="card-text">
-                  <i class="fa-solid fa-cloud"></i>
-                </p>
-                <p class="card-text"><span id="degree-2">20°</span></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Tuesday</h5>
-                <a href="https://fontawesome.com/" target="_blank"></a>
-                <p class="card-text">
-                  <i class="fa-solid fa-cloud-sun"></i>
-                </p>
-                <p class="card-text"><span id="degree-2">21°</span></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Wednesday</h5>
-                <a href="https://fontawesome.com/" target="_blank"></a>
-                <p class="card-text">
-                  <i class="fa-solid fa-sun"></i>
-                </p>
-                <p class="card-text"><span id="degree-2">20°</span></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Thursday</h5>
-                <a href="https://fontawesome.com/" target="_blank"></a>
-                <p class="card-text">
-                  <i class="fa-solid fa-cloud-rain"></i>
-                </p>
-                <p class="card-text"><span id="degree-2">19°</span></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Friday</h5>
-                <a href="https://fontawesome.com/" target="_blank"></a>
-                <p class="card-text">
-                  <i class="fa-solid fa-sun"></i>
-                </p>
-                <p class="card-text"><span id="degree-2">22°</span></p>
-              </div>
-            </div>
-          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-        <small>
-          <a href="https://github.com/t-taia/Weather/" target="_blank">
-            GitHub
-          </a></small
-        >
       </div>
-    </div>
-
+      <small>
+        <a href="https://github.com/t-taia/Weather/" target="_blank">
+          GitHub
+        </a></small
+      >
     <script src="index.js"></script>
   </body>
 </html>
